@@ -6,7 +6,7 @@
 /*   By: sopelet <sopelet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/11 16:13:10 by sopelet           #+#    #+#             */
-/*   Updated: 2026/06/11 17:41:20 by sopelet          ###   ########.fr       */
+/*   Updated: 2026/06/12 10:56:59 by sopelet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,13 @@ HumanB::HumanB(std::string name) {
 HumanB::~HumanB() {
 }
 
+/*
+	HumanB has a pointer to `_weapon` as he may not always have a weapon
+	Pointers can be set to NULL (not references) and they can be changed through
+	the lifetime of the human
+	This function takes a weapon as a reference as the `main` passes it as 
+	an object and not as a pointer
+*/
 void	HumanB::setWeapon(Weapon& weapon) {
 	_weapon = &weapon;
 }
