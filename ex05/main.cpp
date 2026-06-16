@@ -6,7 +6,7 @@
 /*   By: sopelet <sopelet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/12 17:29:18 by sopelet           #+#    #+#             */
-/*   Updated: 2026/06/16 11:45:51 by sopelet          ###   ########.fr       */
+/*   Updated: 2026/06/16 17:34:10 by sopelet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 
 int	main(void) {
 	Harl	harl;
-	std::string	level;
+
+	harl.complain("DEBUG");
+	harl.complain("INFO");
+	harl.complain("WARNING");
+	harl.complain("ERROR");
+	harl.complain("UNKNOWN");
 	
-	while (1) {
-		std::cout << "Enter complain level: \n";
-		std::cin >> level;
-		if (level == "EXIT")
-			break ;
-		harl.complain(level);
-	}
 	return (0);
 }
