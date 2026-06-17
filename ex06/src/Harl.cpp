@@ -6,7 +6,7 @@
 /*   By: sopelet <sopelet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/16 12:09:50 by sopelet           #+#    #+#             */
-/*   Updated: 2026/06/16 12:53:51 by sopelet          ###   ########.fr       */
+/*   Updated: 2026/06/16 17:43:55 by sopelet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,28 +62,20 @@ void	Harl::complain(std::string level) {
 	
 	switch (level_index) {
 		case 0:
-			for (long unsigned int i = 0; i < array_len; ++i) {
-				std::cout << "[ " << whine[i] << " ]\n";
-				(this->*ptr_complains[i])();
-			}
-			break ;
+			std::cout << "[ " << whine[0] << " ]\n";
+			(this->*ptr_complains[0])();
+			/* FALLTHROUGH */
 		case 1:
-			for (long unsigned int i = 1; i < array_len; ++i) {
-				std::cout << "[ " << whine[i] << " ]\n";
-				(this->*ptr_complains[i])();
-			}
-			break ;
+			std::cout << "[ " << whine[1] << " ]\n";
+			(this->*ptr_complains[1])();
+			/* FALLTHROUGH */
 		case 2:
-			for (long unsigned int i = 2; i < array_len; ++i) {
-				std::cout << "[ " << whine[i] << " ]\n";
-				(this->*ptr_complains[i])();
-			}
-			break ;
+			std::cout << "[ " << whine[2] << " ]\n";
+			(this->*ptr_complains[2])();
+			/* FALLTHROUGH */
 		case 3:
-			for (long unsigned int i = 0; i < array_len; ++i) {
-				std::cout << "[ " << whine[i] << " ]\n";
-				(this->*ptr_complains[i])();
-			}
+			std::cout << "[ " << whine[3] << " ]\n";
+			(this->*ptr_complains[3])();
 			break ;
 		default:
 			std::cout << "[ Probably complaining about insignificant problems ]\n";
