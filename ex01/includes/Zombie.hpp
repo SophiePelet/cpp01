@@ -6,7 +6,7 @@
 /*   By: sopelet <sopelet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/11 12:01:26 by sopelet           #+#    #+#             */
-/*   Updated: 2026/06/11 14:24:29 by sopelet          ###   ########.fr       */
+/*   Updated: 2026/06/22 17:55:33 by sopelet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class	Zombie {
 	Zombie();
 	~Zombie();
 
-	void		announce();
+	void		announce() const;
 	void		setName(std::string name);
 
 	private:
