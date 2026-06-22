@@ -6,7 +6,7 @@
 /*   By: sopelet <sopelet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/10 17:21:32 by sopelet           #+#    #+#             */
-/*   Updated: 2026/06/11 11:37:34 by sopelet          ###   ########.fr       */
+/*   Updated: 2026/06/22 17:12:56 by sopelet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,15 @@ class	Zombie {
 	Zombie(std::string);
 	~Zombie();
 
-	void	announce();
+	void	announce(void) const;
 	
 	private:
-	std::string	name;
+	std::string	_name;
 	
 	Zombie(void);
 };
 
-/*-------------------------------- Functions --------------------------------*/
+/*-------------------------------- Global functions --------------------------------*/
 
 Zombie* newZombie(std::string name);
 void	randomChump(std::string name);

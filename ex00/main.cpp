@@ -6,19 +6,19 @@
 /*   By: sopelet <sopelet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/10 17:20:25 by sopelet           #+#    #+#             */
-/*   Updated: 2026/06/11 14:03:40 by sopelet          ###   ########.fr       */
+/*   Updated: 2026/06/22 17:33:42 by sopelet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
 int main() {
-    Zombie  *new_zombie;
+    Zombie  *heap_zombie;
 
-    new_zombie = newZombie("Daniel");
-    new_zombie->announce();
-    randomChump("Loser");
+    heap_zombie = newZombie("HeapZombie");
+    heap_zombie->announce();
+    randomChump("StackZombie");
     
-    delete new_zombie;
+    delete heap_zombie;
     return (0);
 }
