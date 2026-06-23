@@ -6,7 +6,7 @@
 /*   By: sopelet <sopelet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/11 15:34:44 by sopelet           #+#    #+#             */
-/*   Updated: 2026/06/11 17:41:25 by sopelet          ###   ########.fr       */
+/*   Updated: 2026/06/23 10:51:48 by sopelet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ class	HumanB {
 	
 	private:
 
-	Weapon		*_weapon;
 	std::string	_name;
+	Weapon		*_weapon;
 };
 
 #endif
