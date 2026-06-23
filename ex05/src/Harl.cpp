@@ -6,7 +6,7 @@
 /*   By: sopelet <sopelet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/12 17:21:55 by sopelet           #+#    #+#             */
-/*   Updated: 2026/06/16 12:22:17 by sopelet          ###   ########.fr       */
+/*   Updated: 2026/06/23 12:01:25 by sopelet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,17 @@ void	Harl::complain(std::string level) {
 		&Harl::warning,
 		&Harl::error,
 	};
+
+	bool	found = false;
+	
 	for (long unsigned int i = 0; i < sizeof(whine) / sizeof(whine[0]); ++i) {
-		if (whine[i] == level)
+		if (whine[i] == level) {
 			(this->*ptr_complains[i])();
+			found = true;
+			break ;
+		}
 	}
+	
+	if (!found)
+		std::cout << "Unknown level\n";
 }
