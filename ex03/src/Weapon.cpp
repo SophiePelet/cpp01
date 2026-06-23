@@ -6,7 +6,7 @@
 /*   By: sopelet <sopelet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/11 17:15:08 by sopelet           #+#    #+#             */
-/*   Updated: 2026/06/11 17:19:54 by sopelet          ###   ########.fr       */
+/*   Updated: 2026/06/23 16:47:12 by sopelet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Weapon::Weapon(std::string type) {
 Weapon::~Weapon() {
 }
 
-std::string	Weapon::getType() {
+const std::string&	Weapon::getType() const{
 	return (_type);
 }
 

@@ -6,7 +6,7 @@
 /*   By: sopelet <sopelet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/11 16:13:10 by sopelet           #+#    #+#             */
-/*   Updated: 2026/06/23 10:50:58 by sopelet          ###   ########.fr       */
+/*   Updated: 2026/06/23 16:47:40 by sopelet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	HumanB::setWeapon(Weapon& weapon) {
 	_weapon = &weapon;
 }
 
-void	HumanB::attack() {
+void	HumanB::attack() const {
 	if (_weapon == NULL)
 		std::cout << _name << " attacks with their bare hands" << std::endl;
 	else

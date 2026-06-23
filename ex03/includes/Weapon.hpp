@@ -6,7 +6,7 @@
 /*   By: sopelet <sopelet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/11 15:34:47 by sopelet           #+#    #+#             */
-/*   Updated: 2026/06/11 17:20:10 by sopelet          ###   ########.fr       */
+/*   Updated: 2026/06/23 16:47:01 by sopelet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ class	Weapon {
 	Weapon(std::string type);
 	~Weapon();
 
-	std::string	getType();
-	void		setType(std::string type);
+	const std::string&	getType() const;
+	void				setType(std::string type);
 
 	private:
 

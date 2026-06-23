@@ -6,7 +6,7 @@
 /*   By: sopelet <sopelet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/11 15:34:44 by sopelet           #+#    #+#             */
-/*   Updated: 2026/06/23 10:51:48 by sopelet          ###   ########.fr       */
+/*   Updated: 2026/06/23 16:47:27 by sopelet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class	HumanB {
 	~HumanB();
 
 	void	setWeapon(Weapon& weapon);
-	void	attack();
+	void	attack() const;
 	
 	private:
 
